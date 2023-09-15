@@ -47,7 +47,7 @@ Route::get('recurso',[ResourceController::class,'index'])->name('recurso');
     return "mensaje enviado";
 })->name('contactanos.index'); */
 
-Route::post('contact',[ContactanosController::class, 'store'])->name('contactanos.store');
-
+/* Route::post('contact',[ContactanosController::class, 'store'])->name('contactanos.store');
+ */
 
 

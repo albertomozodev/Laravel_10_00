@@ -8,7 +8,7 @@
     <p>{{ $error }}</p>
 @endforeach
 @endif
-<form   method="POST"  action="{{route('contactanos.store')}}" > 
+<form   method="POST"  action="" > 
     @csrf         
     <hr>
   
