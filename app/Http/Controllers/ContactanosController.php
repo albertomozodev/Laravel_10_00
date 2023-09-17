@@ -17,6 +17,6 @@ class ContactanosController extends Controller
         public function store(){
             $correo = new ContactanosMailable;
             Mail::to('albertomozodocente@gmail.com')->send($correo);
-            return "mensaje enviado";
+            
         }
 }

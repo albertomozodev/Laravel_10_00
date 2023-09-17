@@ -64,3 +64,13 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Instalacion
+
+Una vez descargado el repositorio :
+
+- Instalar las depencias desde desde una terminal   $ composer install
+- crear el fichero .env (copia de .env.example)
+- Generar una clave de aplicación                   $ php artisan key:generate
+- Lanzar el servidor desde la terminal              $ php artisan serve
+- Listo, acceder a traves de la url http://127.0.0.1:8080

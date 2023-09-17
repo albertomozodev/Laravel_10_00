@@ -8,6 +8,8 @@
 .env
 .env.backup
 .env.production
+.env.mailtrap
+.env.gmail
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml

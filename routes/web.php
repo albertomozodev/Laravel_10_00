@@ -1,11 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Mail;
 
 use App\Http\Controllers\PruebaController ;
 use App\Http\Controllers\ResourceController;
 use App\Http\Controllers\ContactanosController ;
 use App\Http\Controllers\MessageController ;
+use App\Mail\Contactanos;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,5 +51,12 @@ Route::get('recurso',[ResourceController::class,'index'])->name('recurso');
 
 /* Route::post('contact',[ContactanosController::class, 'store'])->name('contactanos.store');
  */
+
+ Route::get('contactanos',function(){
+    Mail::to('mozo.alberto@gmail.com')
+    ->send(new Contactanos);
+    return "mensaje enviado";
+ })->name('contactanos');
+
 
 
