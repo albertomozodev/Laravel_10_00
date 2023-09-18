@@ -8,6 +8,7 @@ use App\Http\Controllers\ResourceController;
 use App\Http\Controllers\ContactanosController ;
 use App\Http\Controllers\MessageController ;
 use App\Mail\Contactanos;
+use App\Mail\Mail2Controller;
 
 /*
 |--------------------------------------------------------------------------
@@ -57,6 +58,10 @@ Route::get('recurso',[ResourceController::class,'index'])->name('recurso');
     ->send(new Contactanos);
     return "mensaje enviado";
  })->name('contactanos');
+
+ Route::get('mail2',function(){
+    
+ })->name('mail2');
 
 
 
